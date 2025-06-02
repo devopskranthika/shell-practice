@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KiteApps.com - Software Solutions</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #d0e5ff;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      padding: 0 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 1.5rem;
+    }
+    .btn-primary {
+      background-color: #0069d9;
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #004a9f;
+    }
+    main {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    section.services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: white;
+      padding: 1.8rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .service-card h3 {
+      margin-bottom: 1rem;
+      color: #007bff;
+    }
+    .service-card p {
+      color: #555;
+      font-size: 1rem;
+    }
+    footer {
+      background-color: #222;
+      color: #bbb;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KiteApps.com</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Innovative Software Solutions for Your Business</h2>
+    <p>Building custom web, mobile, and cloud applications tailored to your needs.</p>
+    <a href="#contact" class="btn-primary">Get in Touch</a>
+  </section>
+
+  <main>
+    <section id="services" class="services">
+      <div class="service-card">
+        <h3>Custom Web Development</h3>
+        <p>Responsive, scalable websites designed to deliver great user experiences and business results.</p>
+      </div>
+      <div class="service-card">
+        <h3>Mobile App Solutions</h3>
+        <p>iOS and Android app development to keep you connected with your customers on the go.</p>
+      </div>
+      <div class="service-card">
+        <h3>Cloud & DevOps</h3>
+        <p>Cloud infrastructure setup, automation, and CI/CD pipelines for fast and reliable deployments.</p>
+      </div>
+      <div class="service-card">
+        <h3>Consulting & Support</h3>
+        <p>Expert advice and ongoing technical support to ensure your projects succeed.</p>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top: 4rem; text-align: center;">
+      <h2>About KiteApps.com</h2>
+      <p style="max-width: 600px; margin: 1rem auto; color: #555;">
+        KiteApps.com is a leading software solutions provider dedicated to helping businesses innovate and grow with technology.  
+        Our team specializes in building high-quality software products tailored to your unique challenges.
+      </p>
+    </section>
+
+    <section id="contact" style="margin-top: 4rem; text-align: center;">
+      <h2>Contact Us</h2>
+      <p style="max-width: 600px; margin: 1rem auto; color: #555;">
+        Ready to start your project or have questions? Reach out and let's talk!
+      </p>
+      <a href="mailto:info@kiteapps.com" class="btn-primary">Email Us</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 KiteApps.com | All Rights Reserved
+  </footer>
+</body>
+</html>
